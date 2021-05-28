@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="rules"><!--随便写-->
+        <ksession name="test"/><!--随便写-->
+    </kbase>
+</kmodule>

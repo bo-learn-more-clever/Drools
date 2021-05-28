@@ -1,0 +1,15 @@
+import com.drools.droolosdemo.entity.Person
+
+/*不知道干啥用的，但是不能少*/
+dialect  "mvel"
+/*判断哪个字段*/
+rule "age"
+    when
+        /*别名 ： 哪个类的哪个字段，什么条件*/
+        $person : Person(age<16 || age>50)
+    then
+        /*满足了条件，做什么，这里直接就是java代码*/
+        System.out.println("------------");
+        System.out.println("年龄不符合规则");
+        System.out.println("------------");
+end
